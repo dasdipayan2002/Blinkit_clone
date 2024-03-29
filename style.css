@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#vertical_line{
+    height: 70px;
+    border-right: 1px solid rgb(210, 210, 210);
+}
+#search_bar{
+    border:1px solid #eeeeee;
+    border-radius: 12px;
+    width:40%;
+    background-color: #f8f8f8;
+    padding: 0px 10px;
+}
+#search_bar>input{
+    width: 95%;
+    border:none;
+    background-color: transparent;
+    height: 45px;
+}
+#cart{
+    border-radius: 10px;
+    background-color: rgb(12,131,31);
+    color:white;
+}
+#categories{
+    width:85%;
+    margin: auto;
+}
+.scrollable_div{
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+.list{
+    overflow: scroll;
+    text-wrap: nowrap;
+}
+.category_section{
+    width: 85%;
+    margin: auto;
+    margin-top: 35px;
+}
+.my_card{
+    width: 310px;
+    display: inline-block;
+}
+.timer{
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    font-size: 8px;
+    font-weight: 900;
+    width: fit-content;
+    padding: 3px;
+}
+.product_weight{
+    color:#666666;
+}
+footer{
+    width: 85%;
+    margin: auto;
+}
+#footer_row1{
+    display: flex;
+}
+#table_1{
+    flex:1;
+}
+#table_2{
+    flex:2;
+}
+#footer_row2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer_copyright{
+    width: 30%;
+    color:#666666;
+    font-size: 12px;
+}
+#social_icons{
+    display: flex;
+}
+#social_icon{
+    width: 50px;
+    height: 50px;
+    margin-inline: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer_row3{
+    color:#666666;
+    font-size: 14px;
+}
+table{
+    width:100%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+td{
+    color:#666666;
+    font-size: 14px;
+    padding: 4px;
+}
+
+@media screen and (max-width:500px) {
+    nav{
+        flex-direction: column;
+    }
+    #vertical_line{
+        display: none;
+    }
+    #delivery_section{
+        text-align: center;
+    }
+    #search_bar{
+        width:90%;
+    }
+    #search_bar>input{
+        width: 85%;
+    }
+    #hero_section{
+        display: none !important;
+    }
+    #footer_row3{
+        text-align: justify;
+    }
+    #footer_row2{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #footer_copyright{
+        width: 100%;
+    }
+    #footer_row1{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
